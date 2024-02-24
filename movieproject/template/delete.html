@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<form method="post" enctype="multipart/form-data" style="text-align:center">
+    {% csrf_token %}
+
+    Do you Want to delete the movie name??
+    <input type="submit" value="delete">
+</form>
+
+{% endblock %}
